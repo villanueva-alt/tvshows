@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All shows</h1>
+    {% for show in shows %}
+    <p>
+
+        <a href="/shows/{{ show.id }}"><strong>{{ show.title }}</strong></a> ({{ show.year_released }})<br>
+        
+    </p>
+    {% endfor %}
+
+    <h3><a href="/">take me home, country roads</a></h3>
+
+    
+</body>
+</html>
